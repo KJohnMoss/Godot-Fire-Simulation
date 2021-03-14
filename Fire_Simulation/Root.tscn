@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Glow.gd" type="Script" id=1]
+[ext_resource path="res://Particle_Spawn.gd" type="Script" id=2]
+[ext_resource path="res://circ_250x250.png" type="Texture" id=3]
+
+[node name="Root" type="Node"]
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Glow" type="Sprite" parent="Spawner"]
+visible = false
+texture = ExtResource( 3 )
+script = ExtResource( 1 )

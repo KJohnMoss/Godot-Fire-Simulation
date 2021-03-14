@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fireParticle.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/circ_250x250.png-91393146954bcef8becfe37119808a97.stex"
+
+[node name="Particle" type="Sprite"]
+position = Vector2( 498, 282 )
+scale = Vector2( 0.2, 0.2 )
+texture = SubResource( 1 )
+script = ExtResource( 1 )
